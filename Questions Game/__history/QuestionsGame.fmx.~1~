@@ -25,7 +25,6 @@ object Form1: TForm1
     Size.PlatformDefault = False
     TabOrder = 1
     Text = 'Answer1RadioButton'
-    OnChange = Answer1RadioButtonChange
     object Answer2RadioButton: TRadioButton
       Position.Y = 56.000000000000000000
       Size.Width = 393.000000000000000000
@@ -33,7 +32,6 @@ object Form1: TForm1
       Size.PlatformDefault = False
       TabOrder = 2
       Text = 'RadioButton1'
-      OnChange = Answer2RadioButtonChange
       object Answer3RadioButton: TRadioButton
         Position.Y = 48.000000000000000000
         Size.Width = 401.000000000000000000
@@ -41,7 +39,6 @@ object Form1: TForm1
         Size.PlatformDefault = False
         TabOrder = 2
         Text = 'RadioButton1'
-        OnChange = Answer3RadioButtonChange
       end
     end
   end
@@ -53,7 +50,6 @@ object Form1: TForm1
     Size.PlatformDefault = False
     TabOrder = 2
     Text = 'ConfirmButton'
-    OnClick = ConfirmButtonClick
   end
   object Label2: TLabel
     Position.X = 347.000000000000000000
