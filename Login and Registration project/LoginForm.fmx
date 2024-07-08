@@ -25,12 +25,13 @@ object MyLoginForm: TMyLoginForm
   end
   object loginBtn: TButton
     Position.X = 128.000000000000000000
-    Position.Y = 176.000000000000000000
+    Position.Y = 168.000000000000000000
     Size.Width = 129.000000000000000000
-    Size.Height = 22.000000000000000000
+    Size.Height = 30.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 4
     Text = 'Login'
+    OnClick = loginBtnClick
   end
   object passwordEdit: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -46,5 +47,13 @@ object MyLoginForm: TMyLoginForm
     Position.Y = 115.000000000000000000
     Text = 'Password:'
     TabOrder = 1
+  end
+  object messageLabel: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
   end
 end

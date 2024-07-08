@@ -1,6 +1,7 @@
 //---------------------------------------------------------------------------
 
 #include <fmx.h>
+#include <fstream>
 #pragma hdrstop
 
 #include "RegistrationForm.h"
@@ -14,3 +15,21 @@ __fastcall TMyRegistrationForm::TMyRegistrationForm(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+void __fastcall TMyRegistrationForm::saveBtnClick(TObject *Sender)
+{
+	fstream myFile;
+	myFile.open("registeredUsers.txt", ios::app);
+	if(myFile.is_open())
+	{
+		AnsiString name = nameEdit->Text;
+		AnsiString age = ageEdit->Text;
+		AnsiString username = usernameEdit->Text;
+		AnsiString password = passwordEdit->Text;
+
+		myFile<<name<<","<<age<<","<<username<<","<<password<<"\n";
+		myFile.close();
+        this->Close();
+    }
+}
+//---------------------------------------------------------------------------
+

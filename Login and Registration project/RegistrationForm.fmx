@@ -2,8 +2,8 @@ object MyRegistrationForm: TMyRegistrationForm
   Left = 0
   Top = 0
   Caption = 'Registration'
-  ClientHeight = 320
-  ClientWidth = 420
+  ClientHeight = 316
+  ClientWidth = 300
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -88,5 +88,6 @@ object MyRegistrationForm: TMyRegistrationForm
     Size.PlatformDefault = False
     TabOrder = 8
     Text = 'Save'
+    OnClick = saveBtnClick
   end
 end
